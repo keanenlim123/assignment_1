@@ -205,21 +205,12 @@ button {
   color: #fff;
   border: none; 
   border-radius: 5px;
-  cursor: pointer; 
 }
 
 button:hover {
-  background-color: #005f9b; 
+  background-color: #0c8cdb; 
 }
 
-footer {
-  background-color: #333;
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
 
 .split-container .split-img img {
   width: 50px;
@@ -239,16 +230,25 @@ footer {
   height: auto;
 }
 
+footer {
+  background-color: #333;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 
 .footer-content {
   text-align: center;
+  font-size: 1.3rem;
   color: white;
 }
 
-.footer-links a {
-  text-decoration: none;
-  color: white;
-  margin: 0 10px;
+.footer-content p {
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 25px; 
 }
 
 
