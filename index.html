@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 1</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js">
+    </script>
+
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -18,11 +22,6 @@
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
             </ul>
-            <button class="mobile-menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
         </nav>
     </header>
     <section>
@@ -31,23 +30,66 @@
             <div class="hero-text">
                 <h1>Learn . Code . Play</h1>
                 <p>Discover the endless prossibility of game making with us.</p>
+                <br>
+                <a href="#seemore" class="button">See more</a>
             </div>
         </div>
     </section>
+
+    <section class="content-section" id="seemore">
+        <h2>Learn & Grow</h2>
+        <div class="container">
+            <div class="flex-item">
+                <div class="flex-img">
+                    <img src="images/career.jpg" alt="Career">
+                </div>
+                <div class="flex-info">
+                    <h1>Career</h1>
+                    <hr><br>
+                    <p>Learning programming opens doors to a wide range of careers, from game development & software
+                        engineering and many more.</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="flex-img">
+                    <img src="images/problem-solving.jpg" alt="Problem-solving">
+                </div>
+                <div class="flex-info">
+                    <h1>Problem-solving</h1>
+                    <hr><br>
+                    <p>Programming enhances your problem-solving abilities by teaching you how to break down complex
+                        problems into manageable parts.</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="flex-img">
+                    <img src="images/creative.jpg" alt="creativity">
+                </div>
+                <div class="flex-info">
+                    <h1>Creativity</h1>
+                    <hr><br>
+                    <p>As a programmer, you can contribute to technological innovations like developing groundbreaking
+                        video games.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="split-container">
         <div class="split">
             <img src="images/make_game.gif" alt="gif of make_game">
         </div>
         <div class="split">
             <div>
-                <h1>Learn More about our company</h1>
+                <h1>1. Learn More about our company</h1>
                 <br>
                 <p>
-                    Discover who we are, our mission, and how we're shaping the future 
-                    of gaming. Learn about our journey, values, and the team behind our 
+                    Discover who we are, our mission, and how we're shaping the future
+                    of gaming. Learn about our journey, values, and the team behind our
                     innovative products and services.
                 </p>
                 <br>
+
                 <a href="about_us.html" class="button">About Us</a>
             </div>
         </div>
@@ -59,11 +101,11 @@
         </div>
         <div class="split">
             <div>
-                <h1>See what we have to offer</h1>
+                <h1>2. See what we have to offer</h1>
                 <br>
                 <p>
-                    Explore our range of services designed to help you create, 
-                    develop, and enjoy exciting gaming experiences. From game development 
+                    Explore our range of services designed to help you create,
+                    develop, and enjoy exciting gaming experiences. From game development
                     to expert support, we've got you covered!
                 </p>
                 <br>
@@ -71,6 +113,50 @@
             </div>
         </div>
     </section>
+
+    <section class="content-section">
+        <h2>Contact Us</h2>
+        <div class="split-container">
+            <div class="flex-item">
+                <div class="split-img">
+                    <img src="images/phone-icon.png" alt="Phone number">
+                </div>
+                <div class="split">
+                    <h4>Phone number:</h4>
+                    <p>+65 93820569</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="split-img">
+                    <img src="images/email-icon.png" alt="Email">
+                </div>
+                <div class="split">
+                    <h4>Email:</h4>
+                    <p>S10270417@connect.np.edu.sg</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="split-img">
+                    <img src="images/Location-icon.png" alt="Location">
+                </div>
+                <div class="split">
+                    <h4>Location:</h4>
+                    <p>535 Clementi Road, Singapore 599489</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Send Email</h2>
+        <form id="emailForm" onsubmit="return validateEmail();">
+            <div class="form-container">
+                <input id="emailInput" type="email" placeholder="example@gmail.com" required>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
     <footer>
         <div class="footer-content">
             <h3>Our Socials</h3>
