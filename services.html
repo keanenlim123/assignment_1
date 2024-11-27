@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js">
+    </script>
 </head>
 <body>
     <header>
@@ -29,20 +31,109 @@
             </div>
         </div>
     </section>
+    <br>
+    <section class="content-section">
+        <h2>Membership</h2>
+        <div class="split-container">
+            <div class="flex-item">
+                <div class="split-img">
+                    <img src="images/bronze.png" alt="bronze">
+                </div>
+                <div class="split">
+                    <h3>Basic Plan</h3>
+                    <br><hr><br>
+                    <p>✅ Access to beginner-level tutorials and game templates.</p><br>
+                    <p>✅ Community forum participation for peer learning.</p><br>
+                    <p>✅ Monthly Q&A with instructors.</p><br><br><br><br><br>
+                </div>
+                <a href="#" class="button">$24.99 per month</a>
+            </div>
+            <div class="flex-item">
+                <div class="split-img">
+                    <img src="images/silver.png" alt="silver">
+                </div>
+                <div class="split">
+                    <h3>Pro Plan</h3>
+                    <br><hr><br>
+                    <p>✅ Everything in the Basic Plan.</p><br>
+                    <p>✅ Access to intermediate and advanced tutorials.</p><br>
+                    <p>✅ Weekly live workshops and webinars with professionals.</p><br>
+                    <p>✅ Downloadable assets like textures, sprites, and 3D models.</p><br><br>
+                </div>
+                <a href="#" class="button">$44.99 per month</a>
+            </div>
+            <div class="flex-item">
+                <div class="split-img">
+                    <img src="images/gold.png" alt="gold">
+                </div>
+                <div class="split">
+                    <h3>Elite Plan</h3>
+                    <br><hr><br>
+                    <p>✅ Everything in the Pro Plan.</p><br>
+                    <p>✅ One-on-one mentoring sessions.</p><br>
+                    <p>✅ Portfolio review and guidance for job readiness.</p><br>
+                    <p>✅ Early access to new courses and exclusive content.</p><br><br><br>
+                </div>
+                <a href="#seemore" class="button">$79.99 per month</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Contact Us</h2>
+        <div class="split-container">
+            <div class="flex-item">
+                <div class="split-img">
+                    <img src="images/phone-icon.png" alt="Phone number">
+                </div>
+                <div class="split">
+                    <h4>Phone number:</h4>
+                    <p>+65 93820569</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="split-img">
+                    <img src="images/email-icon.png" alt="Email">
+                </div>
+                <div class="split">
+                    <h4>Email:</h4>
+                    <p>S10270417@connect.np.edu.sg</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="split-img">
+                    <img src="images/Location-icon.png" alt="Location">
+                </div>
+                <div class="split">
+                    <h4>Location:</h4>
+                    <p>535 Clementi Road, Singapore 599489</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Send Email</h2>
+        <form id="emailForm" onsubmit="return validateEmail();">
+            <div class="form-container">
+                <input id="emailInput" type="email" placeholder="example@gmail.com" required>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
     <footer>
         <div class="footer-content">
             <h3>Our Socials</h3>
 
             <div class="social-icons">
-                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="images/youtube.png" alt="Youtube"></a>
-                <a href="#"><img src="images/tiktok.png" alt="Tiktok"></a>
+                <a href="https://www.facebook.com/profile.php?id=100010956541731"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com/@kencomputer-od6rc"><img src="images/youtube.png" alt="Youtube"></a>
+                <a href="https://www.tiktok.com/@ken_28010?lang=en"><img src="images/tiktok.png" alt="Tiktok"></a>
             </div>
 
             <p>&copy; 2024 Ken gaming. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-            </div>
+            <p>Privacy Policy | Terms of Service</p>
         </div>
     </footer>
 </body>
