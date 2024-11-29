@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
 * {
   font-family: "Electrolize", sans-serif;
   margin: 0;
@@ -11,11 +12,22 @@ h2 {
   font-size: 2.5em;
 }
 
-.navbar {
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-style: inset;
+  border-width: 1px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0 20px;
   background-color: #333;
   color: white;
 }
@@ -25,13 +37,15 @@ h2 {
   height: auto;
 }
 
-.nav-links {
+.nav-links ul{
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 20px;
 }
 
 .nav-links a {
+  display: block;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.4rem;
@@ -43,13 +57,6 @@ h2 {
 .nav-links a:hover {
   background-color: #555;
   border-radius: 4px;
-}
-
-header {
-  position: sticky; 
-  top: 0;
-  z-index: 1000; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .hero {
@@ -82,9 +89,11 @@ header {
 
 .hero-text p {
   font-size: 1.3rem;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
-.content-section{
+.content-section {
   margin: 10px;
   padding: 20px 0;
   text-align: center;
@@ -93,26 +102,26 @@ header {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
-  align-items: flex-start; 
+  justify-content: center;
+  align-items: flex-start;
   background-color: #fff;
-  margin: 0 auto; 
-  padding: 10px; 
-  max-width: 1300px; 
+  margin-top: 1.5em;
+  padding: 10px;
+  max-width: 1300px;
 }
 
 .flex-item {
   padding: 1%;
   flex-grow: 1;
-  flex-basis: calc(33.33% - 20px); 
+  flex-basis: calc(33.33% - 20px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px; 
+  margin: 10px;
   border: 1px solid #c5c5c5;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
 }
 
 .flex-info {
@@ -124,6 +133,11 @@ header {
   margin: 10px 0;
   font-size: 1.2rem;
   color: #333;
+}
+
+.flex-info p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .flex-img img {
@@ -167,6 +181,20 @@ header {
   text-align: center;
 }
 
+.split-container .split p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+h5 {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 8px 0;
+  padding: 4px 0;
+  color: #333;
+  font-weight: normal;
+}
+
 .button {
   display: inline-block;
   width: 35%;
@@ -177,34 +205,35 @@ header {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  word-wrap: break-word;
+  box-sizing: border-box;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 input[type="email"] {
-  width: 500px; 
-  padding: 20px; 
-  border: 1px solid darkblue; 
-  border-radius: 15px; 
-  margin-bottom: 15px; 
+  width: 500px;
+  padding: 20px;
+  border: 1px solid darkblue;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 button {
-  padding: 10px 20px; 
+  padding: 10px 20px;
   background-color: #0c8cdb;
   color: #fff;
-  border: none; 
+  border: none;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #0c8cdb; 
+  background-color: #0c8cdb;
 }
-
 
 .split-container .split-img img {
   width: 50px;
@@ -242,18 +271,20 @@ footer {
 .footer-content p {
   font-size: 1rem;
   margin-top: 20px;
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
 }
 
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
   .flex-item {
-    padding: 1%; 
+    padding: 1%;
     flex-basis: 80%;
-    flex-grow: 1; 
+    flex-grow: 1;
     flex-grow: inherit;
   }
+
   .split {
     padding: 2%;
     flex-basis: 95%;
@@ -261,7 +292,6 @@ footer {
     flex-grow: inherit;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center; 
+    text-align: center;
   }
 }
