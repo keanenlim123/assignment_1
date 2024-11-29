@@ -107,13 +107,13 @@ nav {
   margin-bottom: 1.5em;
 }
 
-.content-section {
+.game-dev-section {
   margin: 10px;
   padding: 20px 0;
   text-align: center;
 }
 
-.container {
+.text-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -124,7 +124,7 @@ nav {
   max-width: 1300px;
 }
 
-.flex-item {
+.game-module-card {
   padding: 1%;
   flex-grow: 1;
   flex-basis: calc(33.33% - 20px);
@@ -138,29 +138,29 @@ nav {
   background-color: #f9f9f9;
 }
 
-.flex-info {
+.module-info {
   padding: 10px;
   text-align: center;
 }
 
-.flex-info h4 {
+.module-info h4 {
   margin: 10px 0;
   font-size: 1.2rem;
   color: #333;
 }
 
-.flex-info p {
+.module-info p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
-.flex-img img {
+.module-info img {
   max-width: 100%;
   object-fit: contain;
   height: auto;
 }
 
-.split-container {
+.game-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -171,7 +171,7 @@ nav {
   max-width: 1200px;
 }
 
-.split {
+.game-card {
   font-size: 1.1em;
   padding: 2%;
   flex-grow: 1;
@@ -180,22 +180,22 @@ nav {
   flex-direction: column;
 }
 
-.split img {
+.game-card img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.split-container.reversed {
+.game-container.reversed {
   flex-direction: row-reverse;
 }
 
-.split-container .split h4 {
+.game-container .game-card h4 {
   text-align: center;
 }
 
-.split-container .split p {
+.game-container .game-card p {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
@@ -223,18 +223,114 @@ h5 {
   box-sizing: border-box;
 }
 
-.form-container {
+.contact-us-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-input[type="email"] {
-  width: 500px;
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.input-box input:focus {
+  border-color: darkblue;
+  outline: none;
+}
+
+.submit-button {
+  background-color: darkblue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: navy;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="date"] {
+  padding: 8px 10px;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: darkblue;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+
+
+#emailInput {
+  width: 450px;
+  padding: 15px;
   border: 1px solid darkblue;
-  border-radius: 15px;
-  margin-bottom: 15px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+textarea{
+  width: 450px;
+  padding: 15px;
+  border: 1px solid darkblue;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 button {
@@ -249,7 +345,7 @@ button:hover {
   background-color: #0c8cdb;
 }
 
-.split-container .split-img img {
+.game-container .game-card-img img {
   width: 50px;
   height: 50px;
   object-fit: cover;
@@ -319,14 +415,14 @@ footer {
     right: 0;
   }
 
-  .flex-item {
+  .game-module-card {
     padding: 1%;
     flex-basis: 80%;
     flex-grow: 1;
     flex-grow: inherit;
   }
 
-  .split {
+  .game-card {
     padding: 2%;
     flex-basis: 95%;
     flex-grow: 1;
