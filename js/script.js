@@ -9,3 +9,23 @@ function validateEmail() {
     alert("The email has been sent!");
     return true; 
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    // Toggle navigation
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+    });
+
+    // Close navigation when clicking outside
+    document.addEventListener("click", (event) => {
+        const isClickInsideNav = navLinks.contains(event.target);
+        const isClickHamburger = hamburger.contains(event.target);
+
+        if (!isClickInsideNav && !isClickHamburger) {
+            navLinks.classList.remove("open");
+        }
+    });
+});

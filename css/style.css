@@ -32,11 +32,6 @@ nav {
   color: white;
 }
 
-.logo img {
-  max-width: 80px;
-  height: auto;
-}
-
 .nav-links ul{
   display: flex;
   align-items: center;
@@ -57,6 +52,25 @@ nav {
 .nav-links a:hover {
   background-color: #555;
   border-radius: 4px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  border-radius: 2px;
+}
+
+.logo img {
+  max-width: 80px;
+  height: auto;
 }
 
 .hero {
@@ -277,6 +291,33 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
 
   .flex-item {
     padding: 1%;
