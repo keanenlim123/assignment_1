@@ -2,10 +2,11 @@
 My project is to teach people how to start coding their own games. It is for everyone whether they're a beginner or have some experience, my website have professional people with resources and tutorials to guide people through the game development process.
 
 
+
+Wireframe url: https://www.figma.com/design/JCAnuedCOQ0u4MXFPxbpx0/FED_S10270417C_KeanenLim_Assg1_Website?node-id=0-1&t=aAXMENFfIMDHN1UI-1
+
 # Design Process
 I wanted to go for a professional yet friendly and trustworthy website. To went for this look i set most of the images to a game theme also i set eye capturing hero images at the start of the page and when scrolling they would see a lot of details of the website.
-
-Wireframe url: https://www.figma.com/design/JCAnuedCOQ0u4MXFPxbpx0/FED_S10270417C_KeanenLim_Assg1_Website?node-id=0-1&t=umfStKyvuMWjV0lu-1
 
 overall - I show different ways they can get a gold of us by phone, email or location. The navigation collapses into a hambuger menu which  upon clicking they could access the navigation as it pops from the right of the page.
 
@@ -25,8 +26,32 @@ Contact Us Section: it is right above the footer they have a way to send a messa
 Social Media: Icons in the footer provide quick links to our social media platforms.
 
 # Technologies Used
+JQuery
+    - The project uses JQuery to simplify DOM manipulation to store new orders in local storage.
 
 # Testing
+Payment form:
+    1. Go to the "Services" page
+    2. Click on the "$24.99 per month" or any of the other 2 buttons
+    3. Try to submit the form with empty fields and verify that a relevant error message appears
+    4. Try to submit the form with all inputs valid and verify that a success message appears.
+
+Send us a message:
+    1. Go to the either one of these pages "Home" , "About Us" , "Service" page
+    2. Try to fill in the email and check that you will relevant error message appears.
+    3. Try to submit the form with empty fields and verify that a relevant error message appears
+    4. Try to submit the form with all inputs valid and verify that a success message appears.
+
+Social icons:
+    1. Go to the either one of these pages "Home" , "About Us" , "Service", "payment" page
+    2. Scroll down to the footer of the page
+    3. click on any of the social icons to see if it opens a new tab
+
+Showcase:
+    1. Go to the "About Us" page
+    2. Click on the an of "Try me!"
+    3. Check if it opens a new tab
+
 
 # Credits
 check and validate email for payment page: https://www.geeksforgeeks.org/javascript-program-to-validate-an-email-address/
