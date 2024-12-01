@@ -27,8 +27,8 @@ Social Media: Icons in the footer provide quick links to our social media platfo
 A login with a hierarchy system then the admin can access the database but the users who placed the orders cannot
 
 # Technologies Used
-JQuery
-    - The project uses JQuery to simplify DOM manipulation to store new orders in local storage.
+Json
+    - The project uses Json to simplify DOM manipulation to store new orders in local storage.
 
 # Testing
 Payment form:
