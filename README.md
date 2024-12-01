@@ -23,6 +23,9 @@ Contact Us Section: it is right above the footer they have a way to send a messa
 
 Social Media: Icons in the footer provide quick links to our social media platforms.
 
+# Features Left to Implement
+A login with a hierarchy system then the admin can access the database but the users who placed the orders cannot
+
 # Technologies Used
 JQuery
     - The project uses JQuery to simplify DOM manipulation to store new orders in local storage.
