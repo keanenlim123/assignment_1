@@ -105,14 +105,19 @@ function checkForm(e) {
     }
 
     if (isValid) {
-        let newOrder = new Student(fullname, email, nameofcard, plan, carddetails, cvv, date);
-    
+        let newOrder = {
+            fullname: fullname,
+            email: email,
+            nameofcard: nameofcard,
+            plan: plan,
+            carddetails: carddetails,
+            cvv: cvv,
+            date: date
+        };
         let orders = JSON.parse(localStorage.getItem("orders")) || [];
-    
         orders.push(newOrder);
-    
         localStorage.setItem("orders", JSON.stringify(orders));
-    
+
         alert('Form submitted successfully!');
     }
 }
