@@ -275,6 +275,10 @@ form h2 {
   outline: none;
 }
 
+.error {
+  color: red;
+  font-size: 0.8em;
+}
 
 .plan-options {
   flex-direction: row;
