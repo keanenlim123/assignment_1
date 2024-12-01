@@ -1,8 +1,6 @@
 # Ken Gaming (Project Example Idea 2)
 My project is to teach people how to start coding their own games. It is for everyone whether they're a beginner or have some experience, my website have professional people with resources and tutorials to guide people through the game development process.
 
-
-
 Wireframe url: https://www.figma.com/design/JCAnuedCOQ0u4MXFPxbpx0/FED_S10270417C_KeanenLim_Assg1_Website?node-id=0-1&t=aAXMENFfIMDHN1UI-1
 
 # Design Process
@@ -19,7 +17,7 @@ Services - The services page goes into more detail as this is essentially when t
 Payment - After the user click on the plan they want they can see the form which they will fill in their details. And it does validate the user input and also add a entry for local storage.
 
 # Features
-Navigation: The site features a collapsible hamburger menu for easy navigation.
+Navigation: The site features a collapsible hamburger menu for easy navigation in mobile.
 
 Contact Us Section: it is right above the footer they have a way to send a message right above the footer so if they had any questions they could ask.
 
