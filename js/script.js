@@ -1,14 +1,21 @@
-function validateEmail() {
+function validateContactUs() {
     const emailInput = document.getElementById('emailInput').value;
-    
+    const messageInput = document.getElementById('messageInput').value;
+
     if (emailInput === "") {
         alert("Please fill in your email address.");
         return false;
     }
-    
+
+    if (messageInput === "") {
+        alert("Please enter your message.");
+        return false;
+    }
+
     alert("The email has been sent!");
-    return true; 
+    return true;
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector(".hamburger");
@@ -27,3 +34,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+

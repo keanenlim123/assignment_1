@@ -9,7 +9,7 @@
 
 h2 {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.0em;
 }
 
 hr {
@@ -255,7 +255,7 @@ form h2 {
   margin-bottom: 20px;
 }
 
-.input-box span {
+.input-box label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
@@ -273,6 +273,23 @@ form h2 {
 .input-box input:focus {
   border-color: darkblue;
   outline: none;
+}
+
+
+.plan-options {
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-options label {
+  display: flex;
+  font-weight: bold;
+}
+
+.plan-options input[type="radio"] {
+  margin: 0;
 }
 
 .submit-button {
@@ -313,7 +330,6 @@ input:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
 }
-
 
 #emailInput {
   width: 450px;

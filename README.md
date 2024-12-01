@@ -1,4 +1,4 @@
-# Ken Gaming
+# Ken Gaming (Project Example Idea 2)
 My project is to teach people how to start coding their own games. It is for everyone whether they're a beginner or have some experience, my website have professional people with resources and tutorials to guide people through the game development process.
 
 
@@ -29,3 +29,4 @@ Social Media: Icons in the footer provide quick links to our social media platfo
 # Testing
 
 # Credits
+check and validate email for payment page: https://www.geeksforgeeks.org/javascript-program-to-validate-an-email-address/

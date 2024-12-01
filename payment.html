@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 1</title>
+    <title>Ken gaming</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js">
     </script>
@@ -32,32 +32,56 @@
     <section>
     </section>
     <div class="form-container">
-        <form>
+        <form id="payment-form">
             <h2>Payment Details</h2>
             <div class="form-row">
                 <div class="input-box">
-                    <span>Full Name:</span>
-                    <input type="text" placeholder="John Doe" required>
+                    <label>Full Name:</label>
+                    <input id="fullname" type="text" placeholder="John Doe" required>
+                    <div class="error" id="errorFullName"></div>
                 </div>
                 <div class="input-box">
-                    <span>Email:</span>
-                    <input type="email" placeholder="example@gmail.com" required>
+                    <label>Email:</label>
+                    <input id="email" type="email" placeholder="example@gmail.com" required>
+                    <div class="error" id="errorEmail"></div>
                 </div>
                 <div class="input-box">
-                    <span>Name on Card:</span>
-                    <input type="text" placeholder="John Doe" required>
+                    <label>Select Plan:</label>
+                </div>
+                <div class="form-row plan-options">
+                    <label>
+                        <input type="radio" name="plan" value="basic" required>
+                        Basic
+                    </label>
+                    <label>
+                        <input type="radio" name="plan" value="pro">
+                        Pro
+                    </label>
+                    <label>
+                        <input type="radio" name="plan" value="elite">
+                        Elite
+                    </label>
+                    <div class="error" id="errorPlan"></div>
                 </div>
                 <div class="input-box">
-                    <span>Card Details:</span>
-                    <input type="number" placeholder="1234567812345678" required maxlength="16">
+                    <label>Name on Card:</label>
+                    <input id="nameofcard" type="text" placeholder="John Doe" required>
+                    <div class="error" id="errorNameCard"></div>
                 </div>
                 <div class="input-box">
-                    <span>CVV:</span>
-                    <input type="number" placeholder="123" required maxlength="3">
+                    <label>Card Details:</label>
+                    <input id="carddetails" type="text" placeholder="1234567812345678" required maxlength="16" pattern="\d{16}">
+                    <div class="error" id="errorCard"></div>
                 </div>
                 <div class="input-box">
-                    <span>Date of Expiry:</span>
-                    <input type="date" required>
+                    <label>CVV:</label>
+                    <input id="cvv" type="text" placeholder="123" required maxlength="3" pattern="\d{3}">
+                    <div class="error" id="errorCVV"></div>
+                </div>
+                <div class="input-box">
+                    <label>Date of Expiry:</label>
+                    <input id="date" type="date" required>
+                    <div class="error" id="errorDOE"></div>
                 </div>
             </div>
             <div class="form-row">
@@ -70,7 +94,7 @@
             <h4>Our Socials</h4>
 
             <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100010956541731"><img src="images/facebook.png"alt="Facebook"></a>
+                <a href="https://www.facebook.com/profile.php?id=100010956541731" target="_blank"><img src="images/facebook.png"alt="Facebook"></a>
                 <a href="https://www.youtube.com/@kengaming-od6rc"><img src="images/youtube.png" alt="Youtube"></a>
                 <a href="https://www.tiktok.com/@ken_28010?lang=en"><img src="images/tiktok.png" alt="Tiktok"></a>
             </div>
